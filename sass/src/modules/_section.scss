@@ -1,0 +1,187 @@
+/* ==========================================================================
+  Section
+  ========================================================================== */
+$module: 'section';
+
+.#{$module} {
+  position: relative;
+  @include rem(padding, $gutter-xl 0);
+
+  img {
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+  }
+
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__logo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    @include rem(margin, $gutter-lg auto 0);
+
+    @include media-breakpoint-up(md) {
+      @include rem(margin, $gutter-xs auto $gutter-md);
+    }
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+
+  &--dark {
+    background-color: rgba(0, 0, 0, 0.02) !important;
+  }
+
+  &--darker {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+  }
+
+  &--darkest {
+    background-color: rgba(0, 0, 0, 0.07) !important;
+  }
+
+  /* ==========================================================================
+  Sections
+  ========================================================================== */
+  &--work {
+    .#{$module}__row {
+      .col-sm-8 {
+        @include media-breakpoint-up(sm) {
+          @include rem(margin-bottom, $gutter-xs);
+        }
+
+        @include media-breakpoint-up(lg) {
+          @include rem(margin-bottom, $gutter-sm);
+        }
+      }
+    }
+  }
+
+  &--more-work {
+    @include rem(padding, $gutter-md 0 $gutter-xl);
+  }
+
+  &--showcase {
+    padding: 0;
+    @include rem(margin, $gutter-lg 0 0);
+  }
+
+  &--brief {
+    @include rem(padding, $gutter-xl 0 ($gutter-xl - $gutter-sm));
+
+    @include media-breakpoint-up(lg) {
+      @include rem(padding, $gutter-xl 0 ($gutter-xl - $gutter-sm));
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include rem(padding-top, $gutter-md);
+    }
+
+
+    /* ==========================================================================
+    Elements
+    ========================================================================== */
+    .#{$module}__profile {
+      text-align: center;
+      @include rem(margin, 0 0 $gutter-lg 0);
+    }
+
+    .#{$module}__link {
+      display: inline-block;
+
+      .arrow {
+        transition: transform 0.5s $ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        .arrow {
+          transform: translate(2px, -2px);
+        }
+      }
+    }
+
+    .#{$module}__tags {
+      @include rem(margin, 0 0 0 $gutter-xs);
+
+      @include media-breakpoint-up(md) {
+        @include rem(padding, 0 $gutter-lg 0 0);
+      }
+    }
+  }
+
+  &--screenshots {
+    img {
+      display: block;
+      max-width: 100%;
+
+      @include rem(margin, 0 0 $gutter-md);
+
+      @include media-breakpoint-up(lg) {
+        @include rem(margin, 0 0 $gutter-lg);
+      }
+    }
+  }
+
+  &--outcomes {
+    .#{$module}__background {
+      @extend %center;
+      z-index: 0;
+
+      @include media-breakpoint-up(md) {
+        width: 130%;
+        height: auto;
+        top: 45%;
+      }
+    }
+  }
+
+  /* &--keno {
+    &__balls {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  } */
+
+  &--big-head-mode {
+    background: url(../includes/big-head-mode/background.png) center center no-repeat;
+
+    @include media-breakpoint-up(xl) {
+      background-size: contain;
+    }
+  }
+
+  &--pepakura {
+    @include rem(padding, $gutter-xl 0 0);
+
+    &__bench {
+      position: relative;
+      top: -$gutter-xl;
+      margin: 0 auto;
+
+      @include media-breakpoint-up(xl) {
+        left: -50px;
+      }
+    }
+  }
+
+  &--good-people {
+    ul {
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      list-style: none;
+
+      li {
+        @include rem(font-size, $small-size);
+        @include rem(line-height, $small-height);
+        @include rem(padding, $gutter-xxs 0);
+      }
+    }
+  }
+}

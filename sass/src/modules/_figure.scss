@@ -1,0 +1,54 @@
+/* ==========================================================================
+  Figure
+  ========================================================================== */
+$module: 'figure';
+
+.#{$module} {
+  display: block;
+  @include rem(margin, 0 auto $gutter-md);
+
+  @include media-breakpoint-up(lg) {
+    @include rem(margin, 0 auto $gutter-lg);
+  }
+
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__caption {
+    text-align: center;
+    @include rem(font-size, $small-size);
+    @include rem(line-height, $small-height);
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    transition: 500ms opacity $ease-in-out;
+    @include rem(margin, $gutter-xxs auto $gutter-xs);
+
+    img {
+      max-width: 100%;
+    }
+
+    &--is-loaded {
+      opacity: 1 !important;
+    }
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+  &--gif {
+    .preload {
+      display: block;
+    }
+  }
+
+  &--checklist {
+    img {
+      @include media-breakpoint-between(xs, md) {
+        max-width: 315px;
+      }
+    }
+  }
+}

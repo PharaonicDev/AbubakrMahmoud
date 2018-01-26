@@ -1,0 +1,60 @@
+/* ==========================================================================
+  Pepakura
+  ========================================================================== */
+$module: 'pepakura';
+
+.#{$module} {
+  $pepakura_scale: 0.5;
+  position: relative;
+  left: 5px;
+  width: 400px * $pepakura_scale;
+  height: 475px * $pepakura_scale;
+  @include rem(margin, 0 auto $gutter-lg);
+
+  &__background {
+    width: 400px;
+    height: 475px;
+    transform-origin: left top;
+    transform: scale($pepakura_scale);
+    background: url(../includes/big-head-mode/animation/animation0001.png) no-repeat;
+  }
+
+  @include media-breakpoint-up(sm) {
+    $pepakura_scale: 0.5;
+    width: 400px;
+    height: 475px * $pepakura_scale;
+    margin: 0 auto;
+
+    &__background {
+      transform: scale($pepakura_scale) translateX(-15%);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    $pepakura_scale: 0.5;
+    height: 475px * $pepakura_scale;
+    margin: 0 auto;
+
+    &__background {
+      transform: scale($pepakura_scale) translateX(-15%);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    $pepakura_scale: 0.75;
+    height: 475px * $pepakura_scale;
+
+    &__background {
+      transform: scale($pepakura_scale) translateX(-15%);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    $pepakura_scale: 1;
+    height: 475px * $pepakura_scale;
+
+    &__background {
+      transform: scale($pepakura_scale) translateX(-15%);
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+  Form
+  ========================================================================== */
+$module: 'form';
+
+.#{$module} {
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__control {
+    position: relative;
+    max-height: 150px;
+    @include rem(margin, 0 0 $gutter-sm);
+  }
+
+  &__label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    background-color: $black;
+    transition: background-color 0.5s;
+
+    svg {
+      @extend %center;
+      transform-origin: left top;
+      transform: scale(0.75) translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__input, &__textarea {
+    box-sizing: border-box;
+    border-radius: 0;
+    width: 100%;
+    border: 1px solid $black;
+    transition: border 0.5s;
+    @include rem(padding, $gutter-xs $gutter-xs $gutter-xs 55px);
+    @include rem(font-size, $h5-size);
+    @include rem(line-height, $h5-height);
+
+    &:focus {
+      border: 1px solid $red;
+      outline: none;
+
+      + .#{$module}__label {
+        background-color: $red;
+      }
+    }
+  }
+
+  &__input {
+    height: 45px;
+  }
+
+  &__textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  &__submit {
+    font-family: $font-family-sans-serif;
+    font-weight: normal;
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: $black;
+    transition: background 0.5s;
+    @include rem(padding, $gutter-xs $gutter-md);
+
+    &:hover {
+      background-color: $red;
+    }
+  }
+
+  &__error {
+    display: block;
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+}

@@ -1,0 +1,77 @@
+/* ==========================================================================
+  Showcase
+  ========================================================================== */
+$module: 'showcase';
+
+.#{$module} {
+  $showcase_scale: 0.25;
+  position: relative;
+  left: 50%;
+  height: 700px * $showcase_scale;
+  width: 1250px;
+  transform-origin: left top;
+  transform: scale($showcase_scale) translateX(-50%);
+
+  @include media-breakpoint-up(sm) {
+    $showcase_scale: 0.40;
+    height: 700px * $showcase_scale;
+    transform: scale($showcase_scale) translateX(-50%);
+  }
+
+  @include media-breakpoint-up(lg) {
+    $showcase_scale: 0.6;
+    height: 700px * $showcase_scale;
+    transform: scale($showcase_scale) translateX(-50%);
+  }
+
+  @media (min-width: 93.75em) { // 1500px
+    height: 700px;
+    transform: translateX(-50%);
+  }
+
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__sprite {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.5);
+    transform-origin: left top;
+  }
+
+  &__image {
+    position: absolute;
+    transform: scale(0.5);
+    transform-origin: left top;  
+    background-color: $white;
+
+    &--laptop {
+      top: 37px;
+      left: 291px;
+    }
+
+    &--tablet {
+      top: 111px;
+      left: 50px;
+    }
+
+    &--mobile {
+      top: 373px;
+      left: 309px;
+    }
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+
+  /* &--big-head {
+    transform: translateY(-75px);
+
+    @include media-breakpoint-up(lg) {
+      transform: translateY(-135px);
+    }
+  } */
+}

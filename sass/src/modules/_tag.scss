@@ -1,0 +1,66 @@
+/* ==========================================================================
+  Tag
+  ========================================================================== */
+$module:  'tag';
+$tag-size: 30px;
+
+.#{$module} {
+  @extend %before-after;
+  display: inline-block;
+  position: relative;
+  height: $tag-size;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1),inset 1px -2px 1px -1px #eee;
+  background-image: linear-gradient(#FFFFFF, #F0F0F0);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid #D4D4D4;
+  border-left: none;
+  @include rem(margin, 0 $gutter-sm $gutter-sm 0);
+
+  @include media-breakpoint-up(sm) {
+    @include rem(margin, 0 $gutter-md $gutter-sm 0);
+  }
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    z-index: 0;
+    width: 17px;
+    height: 18px;
+    margin-top: -9px;
+    border-right: solid 1px #adadad;
+    border-bottom: solid 1px #d4d4d4;
+    background-image: linear-gradient(45deg, #FFFFFF, #F0F0F0);
+    transform: rotate(134deg) skewX(-10deg) skewY(-10deg);
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  span {
+    position: relative;
+    top: -4px;
+    color: $grey-darker;
+    cursor: default;
+    @include rem(padding, 0 $gutter-md/2);
+    @include rem(font-size, $small-size);
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+}

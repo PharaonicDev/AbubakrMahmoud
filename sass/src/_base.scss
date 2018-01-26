@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+body {
+  overflow-x: hidden;
+  background-color: $grey-video;
+}
+
+#content {
+  position: relative;
+  background: $white;
+  border-top: 1px solid $grey-lighter; // Hello background color
+
+  @include media-breakpoint-up(md) {
+    width: calc(100% - #{$menu-width});
+    transform: translateX(#{$menu-width});
+  }
+}
+
+.contact {
+  display: block;
+  transform: translateY(-2px);
+  @include rem(line-height, $h3-height);
+  @include rem(margin, 0 0 $gutter-sm);
+
+}

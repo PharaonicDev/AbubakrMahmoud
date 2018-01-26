@@ -1,0 +1,228 @@
+/* ==========================================================================
+  hello
+  ========================================================================== */
+$module:                        'hello';
+
+$hello_hand_offset:             100px;
+$hello_hand_distance_closed:    425px;
+$hello_hand_distance_open:      $hello_hand_distance_closed + 15px;
+$hello_hand_scale:              scale(0.92);
+
+$hello_video_open:              450px;
+$hello_video_closed:            700px;
+
+.#{$module} {
+  display: none;
+  @extend %after;
+  overflow: hidden;
+  height: $hello_video_closed;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/noise.gif);
+    opacity: 0.045;
+    z-index: 1;
+  }
+
+  &__hand, &__feet {    
+    display: none;
+    
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/noise.gif);
+      opacity: 0.075;
+      z-index: 1;
+    }
+  }
+
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__video {
+    position: absolute;
+    left: 50%; 
+    width: 1600px;
+    height: auto;
+    transform: translateX(-50%) translateY(-125px);
+
+    @include media-breakpoint-up(md) {
+      transform: translateX(-50%) translateX($menu_width/2 - 12px) translateY(-125px);
+    }
+  }
+
+  &__hand {
+    @extend %after;
+    @extend %center-horizontally;
+    top: -($hello_hand_offset - 1px);
+    margin: auto;
+    z-index: 1;
+    transform-origin: center ($hello_hand_offset + 1px);
+
+    img {
+      animation-duration: 3s;
+      animation-iteration-count: infinite
+    }
+
+    &--left {
+      transform: translateX(-50%) translateX($hello_hand_distance_closed - 150) $hello_hand_scale;
+      animation-name: moveHandLeft;
+      mask: url(../img/hand-left.png);
+      -webkit-mask-image: url(../img/hand-left.png);
+
+      img {
+        animation-name: moveHandLeft;
+      }
+
+      @include media-breakpoint-up(xl) {
+        transform: translateX(-50%) translateX($hello_hand_distance_closed) $hello_hand_scale;
+      }
+    }
+
+    &--right {
+      animation-name: moveHandRight;
+      transform: translateX(-50%) translateX(-$hello_hand_distance_closed + 150) $hello_hand_scale;
+      mask-image:: url(../img/hand-right.png);
+      -webkit-mask-image: url(../img/hand-right.png); 
+
+      img {
+        animation-name: moveHandRight;
+        animation-delay: -200ms;
+      }
+
+      @include media-breakpoint-up(xl) {
+        transform: translateX(-50%) translateX(-$hello_hand_distance_closed) $hello_hand_scale;
+      }
+    }
+    
+    /* &--is-hello {
+      &.hello__hand--left {
+        transform: translateX(-50%) translateX($hello_hand_distance_open) $hello_hand_scale;
+      }
+
+      &.hello__hand--right {
+        transform: translateX(-50%) translateX(-$hello_hand_distance_open) $hello_hand_scale;
+      }
+    } */
+  }
+
+  &__feet {
+    @extend %after;
+    width: 100%;
+    z-index: -1;
+
+    &:after {
+      opacity: 0.06;
+    }
+
+    img {
+      position: relative;
+      left: 50%;
+      margin-left: -#{(1050/2)}px;
+      width: 1050px;
+      animation-name: moveFeet;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+
+      @include media-breakpoint-up(md) {
+        margin-left: -#{(1050/2 - $menu_width/2)};
+      }
+    }
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+  &--is-hello {
+    height: $hello_video_open;
+    transform: translateX(-50%) translateY(0px);
+
+    .#{$module}__video {
+      transform: translateY(-100px);
+    }
+  }
+}
+
+@keyframes moveHandLeft {
+  from {
+    transform: translate(0, 0);
+  }
+  
+  25%{
+    transform: translate(0, 0) rotateX(1deg) rotateY(-1deg);
+  }
+
+  50%{
+    transform: translate(-2px, 0) rotateX(-1deg) rotateY(1deg);
+  }
+
+  75%{
+    transform: translate(0, 0) rotateX(1deg) rotateY(1deg);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveHandRight {
+  from {
+    transform: translate(0, 0);
+  }
+  
+  25%{
+    transform: translate(0, 0) rotateX(1deg) rotateY(-1deg);
+  }
+
+  50%{
+    transform: translate(2px, 0) rotateX(-1deg) rotateY(1deg);
+  }
+
+  75%{
+    transform: translate(0, 0) rotateX(1deg) rotateY(1deg);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveFeet {
+  from {
+    transform: rotateX(3deg) rotateY(-3deg);
+  }
+  
+  25%{
+    transform: rotateX(0);
+  }
+
+  50%{
+    transform: rotateX(3deg) rotateY(3deg);
+  }
+
+  75%{
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(3deg) rotateY(-3deg);
+  }
+}

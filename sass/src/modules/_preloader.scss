@@ -1,0 +1,37 @@
+/* ==========================================================================
+  Preloader
+  ========================================================================== */
+$module: 'preloader';
+
+.#{$module} {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  z-index: 9999;
+  background-color: $red;
+  transition: 250ms width $ease-in-out-quint, 250ms height $ease-in-out-quint;
+
+  @include media-breakpoint-up(md) {
+    left: $menu-width - 1px;
+    right: auto;
+    height: 0%;
+    width: 1px;
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+}
+
+.cover {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+}

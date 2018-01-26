@@ -1,0 +1,79 @@
+/* ==========================================================================
+  Resume
+  ========================================================================== */
+$module: 'resume';
+
+.#{$module} {
+  /* ==========================================================================
+  Elements
+  ========================================================================== */
+  &__category {
+    border-bottom: 1px solid $grey;
+    @include rem(padding, 0 0 $gutter-lg);
+    @include rem(margin, $gutter-xs 0 $gutter-lg);
+
+    @include media-breakpoint-up(sm) {
+      @include rem(margin, 0 0 $gutter-lg);
+    }
+  }
+
+  &__role {
+    display: block;
+    font-family: $font-family-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @include rem(font-size, $h6-size);
+    @include rem(line-height, $h6-height);
+    @include rem(padding, $gutter-xs 0 );
+
+    @include media-breakpoint-up(xl) {
+      display: inline-block;
+      @include rem(padding, 0 0 0 $gutter-sm);
+    }
+  }
+
+  &__list {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    @include rem(padding, 0 0 $gutter-sm $gutter-xs);
+
+    @include media-breakpoint-up(lg) {
+      @include rem(padding, 0 0 0 $gutter-xs);
+    }
+
+    li {
+      @include rem(font-size, $small-size);
+      @include rem(line-height, $small-height);
+      @include rem(padding, $gutter-xxs 0);
+
+      &:before {
+        position: relative;
+        left: -$gutter-xs;
+        content: "\2022";
+        @include rem(font-size, 18px);
+      }
+    }
+
+    &--inline {
+      position: relative;
+      top: -$gutter-xs;
+      width: 75%;
+      @include rem(margin, 0 0 $gutter-md 0);
+      
+      li {
+        display: inline-block;
+        @include rem(margin, 0 $gutter-lg 0 0);
+        @include rem(padding, $gutter-xxs 0 0 0);
+      }
+    }
+  }
+
+  &__heading {
+    @include rem(padding, $gutter-xxs 0);
+  }
+
+  /* ==========================================================================
+  Modifiers
+  ========================================================================== */
+}

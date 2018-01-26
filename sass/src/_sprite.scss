@@ -1,0 +1,48 @@
+.sprite {
+  display: block;
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+
+  &--awwwards {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 99999;
+    width: 140px;
+    height: 210px;
+    background-position: -5px -5px;
+    transform-origin: right center;
+    transform: scale(0.5);
+
+    @include media-breakpoint-up(sm) {
+      top: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &--mobile {
+    width: 2500px;
+    height: 1400px;
+    background-position: -5px -1415px;
+  }
+
+  &--tablet {
+    width: 2500px;
+    height: 1400px;
+    background-position: -155px -5px;
+  }
+
+  &--laptop {
+    width: 2500px;
+    height: 1400px;
+    background-position: -2665px -5px;
+  }
+}
+
+svg {
+  display: inline-block;
+  margin: 0 auto;
+}
