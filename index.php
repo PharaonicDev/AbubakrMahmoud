@@ -34,7 +34,7 @@
                   <div class="heading">
                     <h1 class="heading__title">AbuBakr Mahmoud</h1>
                     <h6 class="heading__subtitle subtitle">
-                      Front-End Developer |Cairo, Egypt <br/>  Love to write a clear, readable and well-documented code to make it easy for who is working with me or even if I was individual.
+                     Full Stack Developer |Cairo, Egypt <br/>  Love to write a clear, readable and well-documented code to make it easy for who is working with me or even if I was individual.
                     </h6>
                   </div>
                 </div>
@@ -193,11 +193,11 @@
 
               <div class="section__row row row-thin">
                 <div class="col-xs-12 col-sm-8">
-                  
+                   <?php include('includes/Soon1/project.php');?>
                 </div>
 
                 <div class="col-xs-12 col-sm-4">
-                 
+                  <?php include('includes/Soon2/project.php');?>
                 </div>
               </div>
 

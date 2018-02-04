@@ -12,7 +12,7 @@
     </small>
 
     <small class="project__link">
-      <a href="https://banhahospital.herokuapp.com/">Live Preview</a>
+      <a href="https://banhahospital.herokuapp.com/"  target="_blank">Live Preview</a>
     </small>
   </div>
 </div>

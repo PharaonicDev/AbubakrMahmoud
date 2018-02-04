@@ -26,7 +26,7 @@
               <div class="heading heading--work">
                 <h1 class="heading__title">Abubakr Mahmoud</h1>
                 <h6 class="heading__subtitle">
-                  bakr@Abubakr.com <br class="hidden-sm-up"/><span class="hidden-sm-down">•</span> +20 01154747912<br class="hidden-xs-down"/> <span class="hidden-sm-up">•</span> cairo,Egypt  
+                 https://abubakrmahmoud.herokuapp.com <br class="hidden-sm-up"/><span class="hidden-sm-down">•</span> +20 01154747912<br class="hidden-xs-down"/> <span class="hidden-sm-up">•</span> cairo,Egypt  
                 </h6>
               </div>
 
@@ -37,7 +37,9 @@
 
                 <div class="col-xs-12 col-lg-9">
                   <div class="resume__category">
-                    <p class="m-b-0"> Front-end developer with more than 2+ years experience building pixel perfect websites. Flexible in working environments having positioned for startups, digital agencies. Focused on helping agile teams with UI development for large scale CMS websites or client-side web apps.</p>
+                    <p class="m-b-0">Iam a Web Developer with a vast array of knowledge in many different  Front end and Back end Languages Responsive Frameworks , Databases and Best Code Practices my Objective is to be the best Web Developer That I Can Be  And  And  What I love. 
+
+So I want To Contribute In  The Technology  Industry , Involved In Projects And Open Source Community .To be proud of Join An Intelligence and Creative Team for Advance My Development career. If you're Interested in Helping Me Make this Happen.</p>
                   </div>
                 </div>
               </div>
@@ -52,9 +54,11 @@
                   <div class="resume__category">
                     <div class="resume__position">
                       <h4>Banha University <small class="resume__role">B.Sc -Physics - 2012</small></h6>
-                      <p>Solid understanding of  principles C++ In Computational Physics Using Computer course</p>
-                      <p>Solid understanding of  principles  In Object programming Course</p>
-                      <p>Solid understanding of Classification of Combinational Logic  principles.Logic circuits Course</p>
+                        <p>To Be Fair  I'm studying  alot of courses  such as  Computational Physics
+Nuclear physics Object programming , C++ In Computational Physics Using Computer course, Mathematics Computer Physics in  Science Banha , But My Degree won't help In business  the Massive Online Courses the only way that help me to be in These Position After 
+Spending Many Hours And Thousands Of Dollars For The Courses To Make Sure That My Output is  Satisfied .</p>
+                    
+                      
 
                      
 
@@ -81,6 +85,32 @@
                 </div>
               </div>
 
+              
+             
+              <div class="row">
+                <div class="col-xs-12 col-lg-3">
+                  <h2>Work <br/>Experience</h2>
+                </div>
+
+                <div class="col-xs-12 col-lg-9">
+
+                  <div class="resume__category">
+
+                  <div class="resume__position">
+                     <h4>Full Stack Developer <small class="resume__role"> AUG 2015 | current</small></h6>
+                      <p>AS a Freelancer web Developer ,I was responsible for Both Front and Back End Development, I Used A Collection of Technologies For  Underlying Structure At Many Projects Were Built Differently . There , My knowledge of Php , Html Css,and Javascript  Expanded, while I Gained Experience Using Some Of The Best Modern Front-End Frameworks Such As 
+Bootstrap Vue and Angular Mysql Databases, Cassandra and MongoDB Node.js NPM,Gulp and Grunt, That Included TDD(test driven development)
+Paired Programing and Agile . Javascript Unit Testing(Karma, Jasmina),check my Repositories  on  Githup to see my work.
+                       .</p>
+                     
+                         
+                    
+                    </div>
+
+                     
+                  </div>
+                </div>
+              </div>
               <div class="row">
                 <div class="col-xs-12 col-lg-3">
                   <h2>Technical Expertise</h2>
@@ -127,102 +157,6 @@
                 </div>
               </div>
 
-             
-              <div class="row">
-                <div class="col-xs-12 col-lg-3">
-                  <h2>Work <br/>Experience</h2>
-                </div>
-
-                <div class="col-xs-12 col-lg-9">
-
-                  <div class="resume__category">
-
-                  <div class="resume__position">
-                      <p>I Was simulate and copy the Design from an idea in the real world for test my Skills and my ability on coding things can work in different media
-                       .</p>
-                      <h4>Front End Developer <small class="resume__role"> AUG 2016 | Mar 2017</small></h6>
-                         
-                      <p>Future :
-                        <span><a href="https://github.com/abobakr11/A-Future">sourcecode</a></span>
-                      </p>
-                      <p>Hotel :
-                        <span><a href="https://github.com/abobakr11/Hotel">sourcecode</a></span>
-                      </p>
-                      <p>Site :
-                        <span><a href="https://github.com/abobakr11/Site">sourcecode</a></span>
-                      </p>
-                      <p>WordPress :
-                        <span><a href="https://github.com/abobakr11/Wordpress">sourcecode</a></span>
-                      </p>
-                      <p>Portfolio :
-                        <span><a href="https://github.com/abobakr11/Portfolio">sourcecode</a></span>
-                      </p>
-                      <p>Pitchfork :
-                        <span><a href="https://github.com/abobakr11/Pitchfork">sourcecode</a></span>
-                      </p>
-                      <p>HelloAbubakr:
-                        <span><a href="https://github.com/abobakr11/master-portfolio">sourcecode</a></span>
-                      </p>
-                      <p>WordPress :
-                        <span><a href="https://github.com/abobakr11/A-Future">sourcecode</a></span>
-                      </p>
-
-                    </div>
-
-                    <div class="resume__position">
-                      <h4>Full Stack Developer<small class="resume__role">  SEP 2017  | CURRENT</small></h6>
-                         
-                    
-                       <p>BanhaHospital :
-                        <span><a href="https://github.com/abobakr11/MedicalCare">sourcecode</a></span>
-                      </p>
-                      <p>Ecommercy-Shop :
-                        <span><a href="https://github.com/abobakr11/Ecommercy-Shop">sourcecode</a></span>
-                      </p>
-                       <p>Hanselandpetal :
-                        <span><a href="https://github.com/abobakr11/hanselandpetal">sourcecode</a></span>
-                      </p>
-                       <p>PHPUserLoginSystem :
-                        <span><a href="https://github.com/abobakr11/phpUserLoginSystem">sourcecode</a></span>
-                      </p>
-                       <p>Master--Ecommercy-Shop :
-                        <span><a href="https://github.com/abobakr11/Master--Ecommercy-Shop">sourcecode</a></span>
-                      </p>
-                       <p>Contact-Forms :
-                        <span><a href="https://github.com/abobakr11/Contact-Forms">sourcecode</a></span>
-                      </p>
-                    </div>
-
-                      <div class="resume__position">
-                      <h4>Mean Stack Javascript Developer<small class="resume__role">  Oct 2017 | Present</small></h6>
-                         
-                    
-                       <h5>NodeJS Projects</h5>
-                       <p>Basic-Express-Website :
-                        <span><a href="https://github.com/abobakr11/Basic-Express-Website">sourcecode</a></span>
-                      </p>
-                      <p>ChatIO :
-                        <span><a href="https://github.com/abobakr11/ChatIO">sourcecode</a></span>
-                      </p>
-                      <p>Nodeauth :
-                        <span><a href="https://github.com/abobakr11/nodeauth">sourcecode</a></span>
-                      </p>
-                      <p>NodeBlog :
-                        <span><a href="https://github.com/abobakr11/NodeBlog">sourcecode</a></span>
-
-                      </p>
-                      <p>UserLoginSystem :
-                        <span><a href="https://github.com/abobakr11/UserLoginSystem">sourcecode</a></span>
-                      </p>
-
-                       <h5>Vue JS APPS</h5>
-                       <p>NoteBook:
-                        <span><a href="https://github.com/abobakr11/NOTEBOOK">sourcecode</a></span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

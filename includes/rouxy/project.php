@@ -18,7 +18,7 @@
     </small>
 
     <small class="project__link">
-      <a href="https://pure-dawn-74880.herokuapp.com/">Live Preview</a>
+      <a href="https://pure-dawn-74880.herokuapp.com/"  target="_blank">Live Preview</a>
     </small>
   </div>
 </div>

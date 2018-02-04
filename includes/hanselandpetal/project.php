@@ -12,7 +12,7 @@
     </small>
 
     <small class="project__link">
-    <a href="https://infinite-headland-10449.herokuapp.com/" >Live Privew</a>
+    <a href="https://infinite-headland-10449.herokuapp.com/" target="_blank">Live Privew</a>
     </small>
   </div>
 </div>
